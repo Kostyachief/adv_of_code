@@ -1,19 +1,18 @@
-file = 'G:/python/adv_of_code/cal_doc.txt'
-
+file = 'G:/python/adv_of_code/day1/cal_doc.txt'
+# словарь с сокращениями
+replacement_dict = {
+    1: 'on',
+    2: 'tw',
+    3: 'thr',
+    4: 'fou',
+    5: 'fi',
+    6: 'six',
+    7: 'sev',
+    8: 'eig',
+    9: 'nin',
+    10: 'ten'
+                    }
 with open(file, 'r') as file:
-    # словарь с сокращениями
-    replacement_dict = {
-                1: 'on',
-                2: 'tw',
-                3: 'thr',
-                4: 'fou',
-                5: 'fi',
-                6: 'six',
-                7: 'sev',
-                8: 'eig',
-                9: 'nin',
-                10: 'ten'
-                        }
     # обьявляем список для результирующей суммы
     DigitsSum = 0
     # пробегаем построчно по файлу
